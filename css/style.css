@@ -1,0 +1,117 @@
+/* Restaurar fuentes */
+@font-face {
+    font-family: 'open-sans';
+    src: url('../Font/Open-sans/static/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../Font/MerriWeather/Merriweather-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Merriweather', Merriweather;
+    background-image: url('../imagenes/fondopared.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.container {
+    width: auto;
+    margin: 0 auto;
+    background-color: #7B3B19;
+    /* border: 3px solid #7b3b1910; */
+    /* border-radius: 1rem; */
+}
+/* 
+.glass-effect{
+    background-color: #7B3B1910;
+    backdrop-filter: blur(0.9rem);
+    -webkit-backdrop-filter: blur(0.9rem);
+} */
+
+h2 {
+    color: #Fafafa;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: #fafafa;
+    transition: width 0.3s ease;
+}
+
+h2:hover::after {
+    width: 100%;
+}
+
+a {
+    color: #fafafa;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.contenido-oculto {
+    display: none;
+}
+
+.contenido-oculto a {
+    color: #fafafa;
+    font-size: 14px;
+    padding-bottom: 10px;
+    font-family: 'open-sans', open-sans;
+}
+
+.contenido-oculto.activo {
+    display: block;
+}
+
+iframe{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+iframe:focus {
+    outline: none;
+}
+
+iframe[seamless] {
+    display: block
+}
+
+footer {
+    color: aliceblue;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 20;
+    display: grid;
+    place-content: center;
+    background-color: #7B3B19;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 480px) {
+
+}

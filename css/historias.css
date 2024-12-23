@@ -1,0 +1,95 @@
+/* Restaurar fuentes */
+@font-face {
+    font-family: 'open-sans';
+    src: url('../Font/Open-sans/static/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../Font/MerriWeather/Merriweather-Regular.ttf');
+}
+
+/* Estilos base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweathe', Merriweathe;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family: 'open-sans', open-sans;
+}
+
+.book-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+/* 
+.back-button {
+    font-size: 3rem;
+    font-family: 'open-sans', open-sans;
+    color: red;
+    margin: 10px 0;
+    margin-right: 80%;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: 3px 0px 0px black,
+        0px 3px 0px black,
+        -3px 0px 0px black,
+        0px -3px 0px black;
+}
+
+.back-button:hover {
+    color: #ffcc00;
+}
+*/
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+main {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+main p {
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 2rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.8rem;
+    }
+
+    main p {
+        font-size: 0.9rem;
+    }
+}
